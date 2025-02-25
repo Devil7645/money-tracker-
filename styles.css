@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.tracker {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 400px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.tracker:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark text */
+    margin-bottom: 20px;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.balance h2 {
+    font-size: 1.5rem;
+    color: #28a745; /* Green for expenses */
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    margin-bottom: 20px;
+}
+
+.transaction-form input,
+.transaction-form select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+.transaction-form input:focus,
+.transaction-form select:focus {
+    border-color: #495057; /* Darker border on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.add-btn {
+    padding: 12px 20px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease; /* Smooth transition for button effects */
+}
+
+.add-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions h3 {
+    color: #555; /* Darker text */
+    margin-bottom: 10px;
+}
+
+#transaction-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+}
+
+#transaction-list li {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background */
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease; /* Smooth transition for list items */
+}
+
+#transaction-list li:hover {
+    background-color: #eee; /* Slightly darker background on hover */
+}
